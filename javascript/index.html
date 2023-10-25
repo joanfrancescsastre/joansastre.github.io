@@ -1,0 +1,45 @@
+   <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+      <script>
+          function saluda() {
+              alert('hola ' + document.getElementById('nombre').value + ' ' + document.getElementById('apellido').value);
+              alert('¿Que tal estás?');
+              alert('yo bien gracias');
+          }
+          function contras() {
+              usuario = document.getElementById('usuario').value;
+              contra = document.getElementById('contra').value;
+              if (usuario == "manolito" && contra == "piesdeplata") {
+                  window.location.href = "atletismo.html";
+              } else {
+                  alert('Contraseña o usuario erroneos');
+              }
+          }
+      </script>
+      <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+      <form action="">
+          <label for="">Nombre</label>
+          <input type="text" name="" id="nombre">
+          <label for="">Apellido</label>
+          <input type="text" name="" id="apellido">
+          <button type="button" onclick="saluda()">saludar</button>
+      </form>
+  <br><br>
+  
+      <form action="">
+          <label for="">Usuario</label>
+          <input type="text" name="" id="usuario">
+          <label for="">Contraseña</label>
+          <input type="text" name="" id="contra">
+          <button type="button" onclick="contras()">Entrar</button>
+      </form>
+  
+  </body>
+  </html>
